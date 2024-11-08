@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acervo de Artistas da MPB</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f4f1e1;
+            color: #5a4e3f;
+        }
+        .navbar {
+            background-color: #d4c8b0;
+        }
+        .navbar-brand {
+            color: #5a4e3f !important;
+            font-family: 'Lobster', cursive;
+            font-size: 1.8rem;
+        }
+        .nav-link {
+            color: #5a4e3f !important;
+        }
+        .navbar-toggler-icon {
+            background-color: #5a4e3f;
+        }
+        .artist-card {
+            margin: 30px 0; /* Aumentado o espaçamento vertical entre as linhas de cards */
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            background-color: #fff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #d4b99e;
+            border-color: #d4b99e;
+        }
+        .btn-primary:hover {
+            background-color: #bfa489;
+            border-color: #bfa489;
+        }
+        footer {
+            background-color: #5a4e3f;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Acervo MPB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Corpo do site -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Acervo de Artistas da MPB</h1>
+
+        <!-- Primeira Linha de Cards -->
+        <div class="row mb-5">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/elissamba2.jpg" class="card-img-top" alt="Elis Regina">
+                    <div class="card-body">
+                        <h5 class="card-title">Elis Regina</h5>
+                        <p class="card-text">Uma das maiores cantoras da história da música brasileira, com uma carreira marcada pela interpretação única e por canções inesquecíveis.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Elis_Regina" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/17_9_2_298_site_autor_CaetanoVeloso.webp" class="card-img-top" alt="Caetano Veloso">
+                    <div class="card-body">
+                        <h5 class="card-title">Caetano Veloso</h5>
+                        <p class="card-text">Cantor, compositor e poeta, Caetano Veloso é uma das figuras mais influentes da música brasileira e da Tropicália.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Caetano_Veloso" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/Quem-e-Gilberto-Gil.jpg" class="card-img-top" alt="Gilberto Gil">
+                    <div class="card-body">
+                        <h5 class="card-title">Gilberto Gil</h5>
+                        <p class="card-text">Gilberto Gil, ícone da música brasileira, mistura MPB com elementos de rock, reggae e música afro-brasileira.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Gilberto_Gil" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda Linha de Cards -->
+        <div class="row mb-5">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/download.webp" class="card-img-top" alt="Djavan">
+                    <div class="card-body">
+                        <h5 class="card-title">Djavan</h5>
+                        <p class="card-text">Djavan é um cantor e compositor conhecido por sua habilidade única em mesclar MPB com jazz, funk e música pop.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Djavan" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/750-x-425-63.webp" class="card-img-top" alt="Toquinho">
+                    <div class="card-body">
+                        <h5 class="card-title">Toquinho</h5>
+                        <p class="card-text">Toquinho é um cantor e compositor que se destacou na MPB com seu talento no violão e parceria com Vinícius de Moraes.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Toquinho" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/tom-jobim-de-blusa-de-frio-na-praia-de-ipanema-sob-o-ceu-nublado-_1_42362.webp" class="card-img-top" alt="Tom Jobim">
+                    <div class="card-body">
+                        <h5 class="card-title">Tom Jobim</h5>
+                        <p class="card-text">Considerado um dos maiores compositores da música brasileira, Jobim é um dos ícones da bossa nova e da MPB.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Jobim" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terceira Linha de Cards -->
+        <div class="row mb-5">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/marisa-monte.webp" class="card-img-top" alt="Marisa Monte">
+                    <div class="card-body">
+                        <h5 class="card-title">Marisa Monte</h5>
+                        <p class="card-text">Marisa Monte é uma das artistas mais aclamadas da MPB, conhecida por sua voz única e pela fusão de estilos.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Marisa_Monte" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/ivete-sangalo.webp" class="card-img-top" alt="Ivete Sangalo">
+                    <div class="card-body">
+                        <h5 class="card-title">Ivete Sangalo</h5>
+                        <p class="card-text">Ivete Sangalo é uma das artistas mais populares e carismáticas da música brasileira, com uma carreira marcada pelo axé e outros estilos.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Ivete_Sangalo" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card artist-card">
+                    <img src="img/ana-vida.jpg" class="card-img-top" alt="Ana Carolina">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana Carolina</h5>
+                        <p class="card-text">Ana Carolina é uma das artistas contemporâneas mais talentosas, misturando MPB, pop e rock com maestria.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Ana_Carolina" class="btn btn-primary" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Acervo de Artistas da MPB. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
